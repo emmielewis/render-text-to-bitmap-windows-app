@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RenderTextToImageWindows", "RenderTextToImageWindows", "{21E41C91-FCE2-4303-9F8F-2F95D37A8CF1}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RenderTextToImageWindows.Shared", "RenderTextToImageWindows\RenderTextToImageWindows.Shared\RenderTextToImageWindows.Shared.shproj", "{40B21907-0119-43BF-ABED-1EE5D1003EED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RenderTextToImageWindows.Windows", "RenderTextToImageWindows\RenderTextToImageWindows.Windows\RenderTextToImageWindows.Windows.csproj", "{FF9285E7-D2CA-4A3C-8CC2-2923B24B7CB1}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		RenderTextToImageWindows\RenderTextToImageWindows.Shared\RenderTextToImageWindows.Shared.projitems*{ff9285e7-d2ca-4a3c-8cc2-2923b24b7cb1}*SharedItemsImports = 4
+		RenderTextToImageWindows\RenderTextToImageWindows.Shared\RenderTextToImageWindows.Shared.projitems*{40b21907-0119-43bf-abed-1ee5d1003eed}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF9285E7-D2CA-4A3C-8CC2-2923B24B7CB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF9285E7-D2CA-4A3C-8CC2-2923B24B7CB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF9285E7-D2CA-4A3C-8CC2-2923B24B7CB1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FF9285E7-D2CA-4A3C-8CC2-2923B24B7CB1}.Debug|ARM.ActiveCfg = Debug|ARM
+		{FF9285E7-D2CA-4A3C-8CC2-2923B24B7CB1}.Debug|ARM.Build.0 = Debug|ARM
+		{FF9285E7-D2CA-4A3C-8CC2-2923B24B7CB1}.Debug|ARM.Deploy.0 = Debug|ARM
+		{FF9285E7-D2CA-4A3C-8CC2-2923B24B7CB1}.Debug|x64.ActiveCfg = Debug|x64
+		{FF9285E7-D2CA-4A3C-8CC2-2923B24B7CB1}.Debug|x64.Build.0 = Debug|x64
+		{FF9285E7-D2CA-4A3C-8CC2-2923B24B7CB1}.Debug|x64.Deploy.0 = Debug|x64
+		{FF9285E7-D2CA-4A3C-8CC2-2923B24B7CB1}.Debug|x86.ActiveCfg = Debug|x86
+		{FF9285E7-D2CA-4A3C-8CC2-2923B24B7CB1}.Debug|x86.Build.0 = Debug|x86
+		{FF9285E7-D2CA-4A3C-8CC2-2923B24B7CB1}.Debug|x86.Deploy.0 = Debug|x86
+		{FF9285E7-D2CA-4A3C-8CC2-2923B24B7CB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF9285E7-D2CA-4A3C-8CC2-2923B24B7CB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF9285E7-D2CA-4A3C-8CC2-2923B24B7CB1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FF9285E7-D2CA-4A3C-8CC2-2923B24B7CB1}.Release|ARM.ActiveCfg = Release|ARM
+		{FF9285E7-D2CA-4A3C-8CC2-2923B24B7CB1}.Release|ARM.Build.0 = Release|ARM
+		{FF9285E7-D2CA-4A3C-8CC2-2923B24B7CB1}.Release|ARM.Deploy.0 = Release|ARM
+		{FF9285E7-D2CA-4A3C-8CC2-2923B24B7CB1}.Release|x64.ActiveCfg = Release|x64
+		{FF9285E7-D2CA-4A3C-8CC2-2923B24B7CB1}.Release|x64.Build.0 = Release|x64
+		{FF9285E7-D2CA-4A3C-8CC2-2923B24B7CB1}.Release|x64.Deploy.0 = Release|x64
+		{FF9285E7-D2CA-4A3C-8CC2-2923B24B7CB1}.Release|x86.ActiveCfg = Release|x86
+		{FF9285E7-D2CA-4A3C-8CC2-2923B24B7CB1}.Release|x86.Build.0 = Release|x86
+		{FF9285E7-D2CA-4A3C-8CC2-2923B24B7CB1}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{40B21907-0119-43BF-ABED-1EE5D1003EED} = {21E41C91-FCE2-4303-9F8F-2F95D37A8CF1}
+		{FF9285E7-D2CA-4A3C-8CC2-2923B24B7CB1} = {21E41C91-FCE2-4303-9F8F-2F95D37A8CF1}
+	EndGlobalSection
+EndGlobal

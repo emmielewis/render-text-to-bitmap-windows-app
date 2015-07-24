@@ -1,0 +1,15 @@
+﻿<Page
+    x:Class="RenderTextToImageWindows.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RenderTextToImageWindows"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBox x:Name="tbxImageText" PlaceholderText="Enter Image Text" Margin="0,10,10,0" Height="154" />
+        <Button x:Name="btnCreateButton" Content="Create Image" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.568,2.653" Margin="0,159,0,0"/>
+    </Grid>
+</Page>
