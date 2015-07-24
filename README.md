@@ -18,3 +18,4 @@ imgCreated.Source = bitmapImage;```
 ```var imageFile = await KnownFolders.PicturesLibrary.CreateFileAsync(filename, CreationCollisionOption.ReplaceExisting);
 MemoryStream pixelStream = RenderStaticTextToBitmap();
 await FileIO.WriteBytesAsync(imageFile, ReadFully(pixelStream));```
+
