@@ -62,9 +62,9 @@ namespace RenderTextToImageWindows
         {
             try
             {
-                MemoryStream imageStream = RenderStaticTextToBitmap();
-                IRandomAccessStream randomAccessStreamForImage = await ConvertToRandomAccessStream(imageStream);
-                Windows.UI.Xaml.Media.Imaging.BitmapImage bitmapImage = new Windows.UI.Xaml.Media.Imaging.BitmapImage();
+                var imageStream = RenderStaticTextToBitmap();
+                var randomAccessStreamForImage = await ConvertToRandomAccessStream(imageStream);
+                var bitmapImage = new Windows.UI.Xaml.Media.Imaging.BitmapImage();
                 bitmapImage.SetSource(randomAccessStreamForImage);
                 imgCreated.Source = bitmapImage;
             }
@@ -82,10 +82,10 @@ namespace RenderTextToImageWindows
         /// <returns></returns>
         public byte[] ReadFully(Stream input)
         {
-            using (MemoryStream ms = new MemoryStream())
+            using (var memoryStream = new MemoryStream())
             {
-                input.CopyTo(ms);
-                return ms.ToArray();
+                input.CopyTo(memoryStream);
+                return memoryStream.ToArray();
             }
         }
 
