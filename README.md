@@ -7,15 +7,19 @@ Quick project that displays how to create an image and save to a bitmap image to
 
 #Usage for Image Control (Windows 8.1 XAML)
 
-```MemoryStream imageStream = RenderStaticTextToBitmap();
+```C#
+MemoryStream imageStream = RenderStaticTextToBitmap();
 IRandomAccessStream randomAccessStreamForImage = await ConvertToRandomAccessStream(imageStream);
 Windows.UI.Xaml.Media.Imaging.BitmapImage bitmapImage = new Windows.UI.Xaml.Media.Imaging.BitmapImage();
 bitmapImage.SetSource(randomAccessStreamForImage);
-imgCreated.Source = bitmapImage;```
+imgCreated.Source = bitmapImage;
+```
 
 #Usage for Saving to Picture Library (Windows 8.1 XAML)
 
-```var imageFile = await KnownFolders.PicturesLibrary.CreateFileAsync(filename, CreationCollisionOption.ReplaceExisting);
+```C#
+var imageFile = await KnownFolders.PicturesLibrary.CreateFileAsync(filename, CreationCollisionOption.ReplaceExisting);
 MemoryStream pixelStream = RenderStaticTextToBitmap();
-await FileIO.WriteBytesAsync(imageFile, ReadFully(pixelStream));```
+await FileIO.WriteBytesAsync(imageFile, ReadFully(pixelStream));
+```
 
