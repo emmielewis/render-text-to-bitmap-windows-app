@@ -1,5 +1,5 @@
 # render-text-to-image-windows-app
-Quick project that displays how to create an image and save to a bitmap image to save to picture library etc. through a Windows 8 application (XAML)
+Quick project that displays how to create an image and save to a bitmap image to save to picture library etc. through a Windows universal/8 application (XAML)
 
 #Example
 
